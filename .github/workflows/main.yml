@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > WinRAR
+          echo $d > WinRARs
           
       - name: Commit changes
         run: | 
@@ -29,16 +29,16 @@ jobs:
           git config --local user.name "${{ github.repository_owner }}"
           git add -A
           
-          arr[0]="WinRAR"
-          arr[1]="WinRAR"
-          arr[2]="WinRAR"
-          arr[3]="WinRAR"
-          arr[4]="WinRAR"
-          arr[5]="WinRAR"
-          arr[6]="WinRAR"
-          arr[7]="WinRAR"
-          arr[8]="WinRAR"
-          arr[9]="WinRAR"
+          arr[0]="WinRAR-Tool"
+          arr[1]="WinRAR-Tool"
+          arr[2]="WinRAR-Tool"
+          arr[3]="WinRAR-Tool"
+          arr[4]="WinRAR-Tool"
+          arr[5]="WinRAR-Tool"
+          arr[6]="WinRAR-Tool"
+          arr[7]="WinRAR-Tool"
+          arr[8]="WinRAR-Tool"
+          arr[9]="WinRAR-Tool"
           
           rand=$[$RANDOM % ${#arr[@]}]
           

@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > WinRARs
+          echo $d > WinRAR1
           
       - name: Commit changes
         run: | 
